@@ -4,7 +4,7 @@ set -e
 echo "Setting executable permissions for wkhtmltopdf..."
 
 # Path to wkhtmltopdf
-WKHTMLTOPDF_PATH="/app/.apt/usr/bin/wkhtmltopdf"
+WKHTMLTOPDF_PATH="/app/.apt/bin/wkhtmltopdf"
 
 # Debugging: List contents of the entire /app/.apt/ directory
 echo "Listing contents of /app/.apt/:"
