@@ -6,11 +6,15 @@ echo "Setting executable permissions for wkhtmltopdf..."
 # Path to wkhtmltopdf
 WKHTMLTOPDF_PATH="/app/.apt/usr/bin/wkhtmltopdf"
 
+# Debugging: List contents of the directory
+echo "Listing contents of /app/.apt/usr/bin/:"
+ls -la /app/.apt/usr/bin/
+
 # Check if wkhtmltopdf exists
 if [ -f "$WKHTMLTOPDF_PATH" ]; then
-   chmod 755 "$WKHTMLTOPDF_PATH"
-   echo "Permissions set to 755 for wkhtmltopdf."
+    chmod 755 "$WKHTMLTOPDF_PATH"
+    echo "Permissions set to 755 for wkhtmltopdf."
 else
-   echo "wkhtmltopdf not found at $WKHTMLTOPDF_PATH."
-   exit 1
+    echo "wkhtmltopdf not found at $WKHTMLTOPDF_PATH."
+    exit 1
 fi
