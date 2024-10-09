@@ -6,7 +6,13 @@ echo "Setting executable permissions for wkhtmltopdf..."
 # Path to wkhtmltopdf
 WKHTMLTOPDF_PATH="/app/.apt/usr/bin/wkhtmltopdf"
 
-# Debugging: List contents of the directory
+# Debugging: List contents of the entire /app/.apt/ directory
+echo "Listing contents of /app/.apt/:"
+ls -la /app/.apt/
+
+echo "Listing contents of /app/.apt/usr/:"
+ls -la /app/.apt/usr/
+
 echo "Listing contents of /app/.apt/usr/bin/:"
 ls -la /app/.apt/usr/bin/
 
